@@ -6,6 +6,7 @@ import os
 
 
 cherrypy.server.socket_host = '0.0.0.0'
+cherrypy.config.update({'server.socket_port': 80})
 
 class FakeDestroyer(object):
 	@cherrypy.expose
