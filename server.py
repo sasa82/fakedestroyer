@@ -5,6 +5,7 @@ import cherrypy
 import os
 
 
+cherrypy.server.socket_host = '0.0.0.0'
 
 class FakeDestroyer(object):
 	@cherrypy.expose
