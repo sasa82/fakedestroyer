@@ -25,12 +25,12 @@
        </div>
     </div>
     <div class="text">
-        <form name="request">
+<!--        <form name="request">-->
     <p align= "center">Проверить информацию на правдивость<br>
    <textarea id="input" name="input" cols="80" rows="6" align="middle"></textarea></p>
-  <p class="text__input"><input id = "check" type="submit" value="Проверить">
-   <input type="reset" value="Очистить"></p>
-        </form>
+  <p class="text__input"><button id = "check" type="submit" value="Проверить">
+   <button id="reset" type="reset" value="Очистить"></p>
+<!--        </form>-->
     </div>
 </body>
 </html>
@@ -40,8 +40,14 @@
 	//var inputButton = $("#check")
 	$("#check").click(function(){
 		var data = $("input").val();
-		console.log(data)
+		console.log(data);
 		alert(data + " - data from textarea" );
+	})
+
+	$("#reset").click(function(){
+		var data = $("input").val();
+		console.log("inside clear");
+		$("input").val() = "";
 	})
 	
 </script>
