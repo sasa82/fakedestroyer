@@ -17,7 +17,10 @@ def fetch_items(data):
 	fetch_query = ("SELECT * FROM entries")
 	cursor.execute(fetch_query)
 	result = cursor.fetchall()
+	cursor.close()
+	connection.close()
 	return result
+	
 	
 	
 def perform_calculations(result):
@@ -26,13 +29,18 @@ def perform_calculations(result):
 
 def generate_response(data):
 	print("inside generate response")
-	response = {'exists' : False, 'error': None}
-	result = fetch_items(data)
-	
-	print("result items")
-	print(result)
-	
-	calc_result = perform_calculations(result)
+	response = {'exists' : False, 'error': None, 'data': None}
+	try:
+		result = fetch_items(data)
+		print("result items")
+		print(result)
+		response['data'] = result # to remove in production mode
+		
+		
+		calc_result = perform_calculations(result)
+		
+	except Exception as e:
+		response['error'] = str(e)
 	
 	
 	
@@ -42,10 +50,8 @@ def generate_response(data):
 class FakeDestroyer(object):
 	@cherrypy.expose
 	def index(self, platform=''):
-		print("inside index")
 		html_template = Template(file='templates/index.html')
 		html_template.css_scripts=['static/style/style.css']
-		print("before return")
 		return str(html_template)
 		
 	@cherrypy.expose
@@ -62,7 +68,6 @@ class FakeDestroyer(object):
 				
 	@cherrypy.expose
 	def api(self, data):
-		print("inside api request - " + data)
 		response = generate_response(data)
 		return json.dumps(response)
 

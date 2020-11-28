@@ -185,3 +185,10 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/authentication.py", line 191, in get_auth_plugin
     "Authentication plugin '{0}' is not supported".format(plugin_name))
 mysql.connector.errors.NotSupportedError: Authentication plugin 'caching_sha2_password' is not supported
+[29/Nov/2020:01:38:09] ENGINE Keyboard Interrupt: shutting down bus
+[29/Nov/2020:01:38:09] ENGINE Bus STOPPING
+[29/Nov/2020:01:38:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[29/Nov/2020:01:38:09] ENGINE Bus STOPPED
+[29/Nov/2020:01:38:09] ENGINE Bus EXITING
+[29/Nov/2020:01:38:09] ENGINE Bus EXITED
+[29/Nov/2020:01:38:09] ENGINE Waiting for child threads to terminate...
