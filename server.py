@@ -24,7 +24,7 @@ def fetch_items(data):
 	
 	
 def perform_calculations(result):
-	print("inside perform calculations")
+	print("perform all calcs here!!!!!")
 
 
 def generate_response(data):
