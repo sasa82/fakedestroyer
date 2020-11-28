@@ -42,8 +42,10 @@ def generate_response(data):
 class FakeDestroyer(object):
 	@cherrypy.expose
 	def index(self, platform=''):
+		print("inside index")
 		html_template = Template(file='templates/index.html')
 		html_template.css_scripts=['static/style/style.css']
+		print("before return")
 		return str(html_template)
 		
 	@cherrypy.expose
