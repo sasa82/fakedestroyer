@@ -4,7 +4,40 @@ import string
 import cherrypy
 import os
 from Cheetah.Template import Template
+import json
+import mysql.connector
 
+
+def fetch_items(data):
+	print("inside fetch items")
+	connection = mysql.connector.connect(host="127.0.0.1", user="root", passwd="root", db="fakedestroyer", charset='utf8')
+	cursor = connection.cursor(buffered=True)
+	cursor.execute("SET NAMES 'utf8';")
+	cursor.execute("SET CHARACTER SET 'utf8';")
+	fetch_query = ("SELECT * FROM entries")
+	cursor.execute(fetch_query)
+	result = cursor.fetchall()
+	return result
+	
+	
+def perform_calculations(result):
+	print("inside perform calculations")
+
+
+def generate_response(data):
+	print("inside generate response")
+	response = {'exists' : False, 'error': None}
+	result = fetch_items(data)
+	
+	print("result items")
+	print(result)
+	
+	calc_result = perform_calculations(result)
+	
+	
+	
+	return response
+	
 
 class FakeDestroyer(object):
 	@cherrypy.expose
@@ -28,6 +61,9 @@ class FakeDestroyer(object):
 	@cherrypy.expose
 	def api(self, data):
 		print("inside api request - " + data)
+		response = generate_response(data)
+		return json.dumps(response)
+
 
 
 

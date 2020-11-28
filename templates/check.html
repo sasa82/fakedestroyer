@@ -36,21 +36,29 @@
 	#raw
 	$(document).ready(function() {
 		console.log("inside check script " )
-		//var url = 'http://127.0.0.1/api_check';
-		var url = 'http://fakedestroer.datacentr.net/api';
+		var url = 'http://127.0.0.1/api';
+		//var url = 'http://fakedestroer.datacentr.net/api';
 		
 		$('#check').click(function(){
 			var data = $('textarea').val();
 			console.log(data);
-			$.get(url, {
+			$.post(url, {
 				data: data
-			})
+			}, onResponse)
 		})
 
 		$('#reset').click(function(){
 			console.log("inside clear");
 			$('textarea').val('');
 		})
+		
+		
+		function onResponse(data){
+			console.log("inside on resp")
+			var response = $.parseJSON(data)
+			
+			console.log(response)
+		}
   })
   #end raw
 	
