@@ -24,9 +24,9 @@ class FakeDestroyer(object):
 		path = os.path.abspath("fakedestroyer-front/about.html")
 		return open(path)
 				
-#	@cherrypy.expose
-#	def generate(self, length=8):
-#		return ''.join(random.sample(string.hexdigits, int(length)))
+	@cherrypy.expose
+	def api_check(self):
+		print("inside api request")
 
 
 if __name__ == '__main__':
