@@ -18,7 +18,7 @@ class FakeDestroyer(object):
 #		html_template = Template(file=templ_path)
 #		html_template.css_scripts=[css_path]
 		html_template = Template(file='fakedestroyer-front/index.html')
-		html_template.css_scripts=['fakedestroyer-front/assets/style/style.css']
+		html_template.css_scripts=['static/style/style.css']
 		return str(html_template)
 		#return open(path)
 		
