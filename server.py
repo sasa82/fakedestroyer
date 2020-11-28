@@ -26,8 +26,8 @@ class FakeDestroyer(object):
 		return str(html_template)
 				
 	@cherrypy.expose
-	def api_check(self):
-		print("inside api request")
+	def api(self, data):
+		print("inside api request - " + data)
 
 
 

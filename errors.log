@@ -1,0 +1,30 @@
+[28/Nov/2020:23:39:12] ENGINE Listening for SIGUSR1.
+[28/Nov/2020:23:39:12] ENGINE Listening for SIGTERM.
+[28/Nov/2020:23:39:12] ENGINE Listening for SIGHUP.
+[28/Nov/2020:23:39:12] ENGINE Bus STARTING
+[28/Nov/2020:23:39:12] ENGINE Serving on http://0.0.0.0
+[28/Nov/2020:23:39:12] ENGINE Bus STARTED
+[28/Nov/2020:23:39:28] HTTP 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/cherrypy/_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/cherrypy/_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "server.py", line 20, in check
+    return str(html_template)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/Cheetah/Template.py", line 1053, in __unicode__
+    return getattr(self, mainMethName)()
+  File "_Users_Home_Development_fakedestroyer_templates_check_html.py", line 124, in respond
+NameMapper.NotFound: cannot find 'document'
+[29/Nov/2020:00:02:09] ENGINE Keyboard Interrupt: shutting down bus
+[29/Nov/2020:00:02:09] ENGINE Bus STOPPING
+[29/Nov/2020:00:02:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[29/Nov/2020:00:02:09] ENGINE Bus STOPPED
+[29/Nov/2020:00:02:09] ENGINE Bus EXITING
+[29/Nov/2020:00:02:09] ENGINE Bus EXITED
+[29/Nov/2020:00:02:09] ENGINE Waiting for child threads to terminate...
+[29/Nov/2020:00:02:09] ENGINE Waiting for thread HTTPServer Thread-1.
