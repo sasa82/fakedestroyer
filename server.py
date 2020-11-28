@@ -25,9 +25,9 @@ class FakeDestroyer(object):
 		html_template.css_scripts=['static/style/style.css']
 		return str(html_template)
 				
-#	@cherrypy.expose
-#	def api_check(self):
-#		print("inside api request")
+	@cherrypy.expose
+	def api_check(self):
+		print("inside api request")
 
 
 
