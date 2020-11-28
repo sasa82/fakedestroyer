@@ -38,18 +38,17 @@
 </html>
 
 <script>
-	document.ready(function() {
+	window.onload(function() {
 		console.log("inside check script " )
 		
-		window.onload = function() {
-			if (window.jQuery) {
-				// jQuery is loaded
-				alert("Yeah!");
-			} else {
-				// jQuery is not loaded
-				alert("Doesn't Work");
-			}
+		if (window.jQuery) {
+			// jQuery is loaded
+			alert("Yeah!");
+		} else {
+			// jQuery is not loaded
+			alert("Doesn't Work");
 		}
+		
 		$('#check').click(function(){
 			var data = $('input').val();
 			console.log(data);
