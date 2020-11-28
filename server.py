@@ -12,6 +12,16 @@ class FakeDestroyer(object):
 	def index(self, platform=''):
 		path = os.path.abspath("fakedestroyer-front/index.html")
 		return open(path)
+		
+	@cherrypy.expose
+	def check(self):
+		path = os.path.abspath("fakedestroyer-front/check.html")
+		return open(path)
+		
+	@cherrypy.expose
+	def about(self):
+		path = os.path.abspath("fakedestroyer-front/about.html")
+		return open(path)
 				
 #	@cherrypy.expose
 #	def generate(self, length=8):
