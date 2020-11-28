@@ -22,13 +22,19 @@ def fetch_items(data):
 	return result
 	
 	
-def perform_calculations(result):
-	print("perform all calcs here!!!!!")
+def perform_calculations(result, data):
+	print("inside perform calculations")
+	reference = ""
+	
+	
+	#perform calculations here
+	
+	return reference
 
 
 def generate_response(data):
 	print("inside generate response")
-	response = {'exists' : False, 'error': None, 'data': None}
+	response = {'reference' : None, 'error': None, 'data': None}
 	try:
 		result = fetch_items(data)
 		print("result items")
@@ -36,7 +42,8 @@ def generate_response(data):
 		response['data'] = result # to remove in production mode
 		
 		
-		calc_result = perform_calculations(result)
+		calc_result = perform_calculations(result, data)
+		response['reference'] = calc_result
 		
 	except Exception as e:
 		response['error'] = str(e)
