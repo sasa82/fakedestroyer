@@ -10,7 +10,7 @@ import mysql.connector
 
 def fetch_items(data):
 	print("inside fetch items")
-	connection = mysql.connector.connect(host="127.0.0.1", user="root", passwd="root", db="fakedestroyer", charset='utf8')
+	connection = mysql.connector.connect(host="127.0.0.1", user="root", passwd="root", db="fakedestroyers", charset='utf8')
 	cursor = connection.cursor(buffered=True)
 	cursor.execute("SET NAMES 'utf8';")
 	cursor.execute("SET CHARACTER SET 'utf8';")

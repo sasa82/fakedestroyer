@@ -152,3 +152,36 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/authentication.py", line 191, in get_auth_plugin
     "Authentication plugin '{0}' is not supported".format(plugin_name))
 mysql.connector.errors.NotSupportedError: Authentication plugin 'caching_sha2_password' is not supported
+[29/Nov/2020:01:23:17] HTTP 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/cherrypy/_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/cherrypy/_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "server.py", line 64, in api
+    response = generate_response(data)
+  File "server.py", line 30, in generate_response
+    result = fetch_items(data)
+  File "server.py", line 13, in fetch_items
+    connection = mysql.connector.connect(host="127.0.0.1", user="root", passwd="root", db="fakedestroyer", charset='utf8')
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/__init__.py", line 179, in connect
+    return MySQLConnection(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/connection.py", line 95, in __init__
+    self.connect(**kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/abstracts.py", line 716, in connect
+    self._open_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/connection.py", line 210, in _open_connection
+    self._ssl)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/connection.py", line 142, in _do_auth
+    auth_plugin=self._auth_plugin)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/protocol.py", line 102, in make_auth
+    auth_data, ssl_enabled)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/protocol.py", line 58, in _auth_response
+    auth = get_auth_plugin(auth_plugin)(
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/authentication.py", line 191, in get_auth_plugin
+    "Authentication plugin '{0}' is not supported".format(plugin_name))
+mysql.connector.errors.NotSupportedError: Authentication plugin 'caching_sha2_password' is not supported
