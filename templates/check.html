@@ -38,28 +38,30 @@
 </html>
 
 <script>
-	console.log("inside check script " )
-	
-	window.onload = function() {
-		if (window.jQuery) {
-			// jQuery is loaded
-			alert("Yeah!");
-		} else {
-			// jQuery is not loaded
-			alert("Doesn't Work");
+	$(document).ready(function() {
+		console.log("inside check script " )
+		
+		window.onload = function() {
+			if (window.jQuery) {
+				// jQuery is loaded
+				alert("Yeah!");
+			} else {
+				// jQuery is not loaded
+				alert("Doesn't Work");
+			}
 		}
-	}
-	$('#check').click(function(){
-		var data = $('input').val();
-		console.log(data);
-		alert(data + " - data from textarea" );
-	})
+		$("#check").click(function(){
+			var data = $("input").val();
+			console.log(data);
+			alert(data + " - data from textarea" );
+		})
 
-	$("#reset").click(function(){
-		var data = $("input").val();
-		console.log("inside clear");
-		$("input").val() = "";
-	})
+		$("#reset").click(function(){
+			var data = $("input").val();
+			console.log("inside clear");
+			$("input").val() = "";
+		})
+  }
 	
 </script>
 
