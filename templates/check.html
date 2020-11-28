@@ -41,7 +41,7 @@
 		
 		$('#check').click(function(){
 			var data = $('textarea').val();
-			console.log(data);
+			$('textarea').val('');
 			$.post(url, {
 				data: data
 			}, onResponse)

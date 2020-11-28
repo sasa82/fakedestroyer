@@ -22,7 +22,6 @@ def fetch_items(data):
 	return result
 	
 	
-	
 def perform_calculations(result):
 	print("perform all calcs here!!!!!")
 
