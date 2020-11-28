@@ -60,4 +60,4 @@ config = {
 
 
 if __name__ == '__main__':
-	cherrypy.quickstart(FakeDestroyer())
+	cherrypy.quickstart(FakeDestroyer(), '/', config)
