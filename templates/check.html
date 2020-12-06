@@ -84,6 +84,7 @@
 				
 			}
 			$( "#dialog" ).html(respStr)
+			$.ui.dialog.prototype._focusTabbable = function(){};
 			$( "#dialog" ).dialog({width: "400px"});
 		}
   })
