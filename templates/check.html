@@ -75,7 +75,7 @@
 			}
 			
 			var respStr = "",  refWithLink = "";
-			if(response.reference === null || response.reference === ""){
+			if(!response.reference){
 				respStr = "На даний момент в базі даних немає інформації, яка визначала б Ваш запит фейком. </br> Дякуємо, що скористались даним сайтом!"
 			}else{
 				refWithLink = response.reference
