@@ -2,6 +2,9 @@
 <html lang= "ru">
     <head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
         <meta charsret ="UTF-8">
         <link rel="stylesheet" href="../static/css/style.css">
         <title>Fakedestroyer</title>
@@ -31,13 +34,19 @@
    <input id="reset" type="reset" value="Очистить"></p>
     </div>
 	
+	<div id="dialog" title="Fakedestroyers" style="text-align:center">
+	  
+	</div>
+	
 
 <script type="text/javascript">
 	#raw
 	$(document).ready(function() {
 		console.log("inside check script " )
-		//var url = 'http://127.0.0.1/api'; // use for local api
-		var url = 'http://fakedestroer.datacentr.net/api';
+		var url = 'http://127.0.0.1/api'; // use for local api
+		//var url = 'http://fakedestroer.datacentr.net/api';
+		
+		var positiveTespStr =
 		
 		$('#check').click(function(){
 			var data = $('textarea').val();
@@ -56,9 +65,26 @@
 		function onResponse(data){
 			console.log("inside on resp")
 			var response = $.parseJSON(data)
-			
-			
 			console.log(response)
+			console.log(response.reference)
+			
+			if (response.error !== null){
+				$( "#dialog" ).text(response.error)
+				$( "#dialog" ).dialog({width: "400px"});
+				return;
+			}
+			
+			var respStr = "",  refWithLink = "";
+			if(response.reference === null || response.reference === ""){
+				respStr = "На даний момент в базі даних немає інформації, яка визначала б Ваш запит фейком. \n Дякуємо, що скористались даним сайтом!"
+			}else{
+				refWithLink = response.reference
+				//refWithLink.link = response.reference
+				respStr = "Дана інформація є фейком! Більш детальну інформацію знайдете за цією адресою: <a href= " +  response.reference +  ">" + response.reference + " </a>. </br> Дякуємо, що скористались даним сайтом!"
+				
+			}
+			$( "#dialog" ).html(respStr)
+			$( "#dialog" ).dialog({width: "400px"});
 		}
   })
   #end raw
