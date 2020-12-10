@@ -192,3 +192,200 @@ mysql.connector.errors.NotSupportedError: Authentication plugin 'caching_sha2_pa
 [29/Nov/2020:01:38:09] ENGINE Bus EXITING
 [29/Nov/2020:01:38:09] ENGINE Bus EXITED
 [29/Nov/2020:01:38:09] ENGINE Waiting for child threads to terminate...
+[28/Nov/2020:21:43:54] ENGINE Listening for SIGTERM.
+[28/Nov/2020:21:43:54] ENGINE Bus STARTING
+[28/Nov/2020:21:43:54] ENGINE Set handler for console events.
+[28/Nov/2020:21:43:54] ENGINE Serving on http://0.0.0.0
+[28/Nov/2020:21:43:54] ENGINE Bus STARTED
+[28/Nov/2020:21:48:59] ENGINE Console event 0: shutting down bus
+[28/Nov/2020:21:48:59] ENGINE Removed handler for console events.
+[28/Nov/2020:21:48:59] ENGINE Bus STOPPING
+[28/Nov/2020:21:49:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[28/Nov/2020:21:49:00] ENGINE Handler for console events already off.
+[28/Nov/2020:21:49:00] ENGINE Bus STOPPED
+[28/Nov/2020:21:49:00] ENGINE Bus EXITING
+[28/Nov/2020:21:49:00] ENGINE Waiting for child threads to terminate...
+[28/Nov/2020:21:49:00] ENGINE Bus EXITED
+[28/Nov/2020:21:54:47] ENGINE Listening for SIGTERM.
+[28/Nov/2020:21:54:47] ENGINE Bus STARTING
+[28/Nov/2020:21:54:47] ENGINE Set handler for console events.
+[28/Nov/2020:21:54:47] ENGINE Serving on http://0.0.0.0
+[28/Nov/2020:21:54:47] ENGINE Bus STARTED
+[28/Nov/2020:22:11:44] ENGINE Console event 0: shutting down bus
+[28/Nov/2020:22:11:44] ENGINE Removed handler for console events.
+[28/Nov/2020:22:11:44] ENGINE Bus STOPPING
+[28/Nov/2020:22:11:44] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[28/Nov/2020:22:11:44] ENGINE Handler for console events already off.
+[28/Nov/2020:22:11:44] ENGINE Bus STOPPED
+[28/Nov/2020:22:11:44] ENGINE Bus EXITING
+[28/Nov/2020:22:11:44] ENGINE Bus EXITED
+[28/Nov/2020:22:11:44] ENGINE Waiting for child threads to terminate...
+[28/Nov/2020:22:12:18] ENGINE Listening for SIGTERM.
+[28/Nov/2020:22:12:18] ENGINE Bus STARTING
+[28/Nov/2020:22:12:18] ENGINE Set handler for console events.
+[28/Nov/2020:22:12:18] ENGINE Serving on http://0.0.0.0
+[28/Nov/2020:22:12:18] ENGINE Bus STARTED
+[28/Nov/2020:22:20:46] ENGINE Console event 2: shutting down bus
+[28/Nov/2020:22:20:46] ENGINE Removed handler for console events.
+[28/Nov/2020:22:20:46] ENGINE Bus STOPPING
+[28/Nov/2020:22:20:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[28/Nov/2020:22:20:46] ENGINE Handler for console events already off.
+[28/Nov/2020:22:20:46] ENGINE Bus STOPPED
+[28/Nov/2020:22:20:46] ENGINE Bus EXITING
+[28/Nov/2020:22:20:46] ENGINE Waiting for child threads to terminate...
+[28/Nov/2020:22:20:46] ENGINE Bus EXITED
+[29/Nov/2020:14:04:11] ENGINE Listening for SIGTERM.
+[29/Nov/2020:14:04:11] ENGINE Bus STARTING
+[29/Nov/2020:14:04:11] ENGINE Set handler for console events.
+[29/Nov/2020:14:04:12] ENGINE Serving on http://0.0.0.0
+[29/Nov/2020:14:04:12] ENGINE Bus STARTED
+[29/Nov/2020:14:06:05] ENGINE Console event 0: shutting down bus
+[29/Nov/2020:14:06:05] ENGINE Removed handler for console events.
+[29/Nov/2020:14:06:05] ENGINE Bus STOPPING
+[29/Nov/2020:14:06:05] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[29/Nov/2020:14:06:05] ENGINE Handler for console events already off.
+[29/Nov/2020:14:06:05] ENGINE Bus STOPPED
+[29/Nov/2020:14:06:05] ENGINE Bus EXITING
+[29/Nov/2020:14:06:05] ENGINE Waiting for child threads to terminate...
+[29/Nov/2020:14:06:05] ENGINE Bus EXITED
+[04/Dec/2020:16:04:47] ENGINE Listening for SIGTERM.
+[04/Dec/2020:16:04:47] ENGINE Bus STARTING
+[04/Dec/2020:16:04:47] ENGINE Set handler for console events.
+[04/Dec/2020:16:04:47] ENGINE Serving on http://0.0.0.0
+[04/Dec/2020:16:04:47] ENGINE Bus STARTED
+[04/Dec/2020:16:14:47] ENGINE Console event 0: shutting down bus
+[04/Dec/2020:16:14:47] ENGINE Removed handler for console events.
+[04/Dec/2020:16:14:47] ENGINE Bus STOPPING
+[04/Dec/2020:16:14:47] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[04/Dec/2020:16:14:47] ENGINE Handler for console events already off.
+[04/Dec/2020:16:14:47] ENGINE Bus STOPPED
+[04/Dec/2020:16:14:47] ENGINE Bus EXITING
+[04/Dec/2020:16:14:47] ENGINE Waiting for child threads to terminate...
+[04/Dec/2020:16:14:47] ENGINE Bus EXITED
+[04/Dec/2020:16:14:51] ENGINE Listening for SIGTERM.
+[04/Dec/2020:16:14:51] ENGINE Bus STARTING
+[04/Dec/2020:16:14:51] ENGINE Set handler for console events.
+[04/Dec/2020:16:14:51] ENGINE Serving on http://0.0.0.0
+[04/Dec/2020:16:14:51] ENGINE Bus STARTED
+[04/Dec/2020:16:53:05] ENGINE Console event 0: shutting down bus
+[04/Dec/2020:16:53:05] ENGINE Removed handler for console events.
+[04/Dec/2020:16:53:05] ENGINE Bus STOPPING
+[04/Dec/2020:16:53:05] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[04/Dec/2020:16:53:05] ENGINE Handler for console events already off.
+[04/Dec/2020:16:53:05] ENGINE Bus STOPPED
+[04/Dec/2020:16:53:05] ENGINE Bus EXITING
+[04/Dec/2020:16:53:05] ENGINE Bus EXITED
+[04/Dec/2020:16:53:05] ENGINE Waiting for child threads to terminate...
+[04/Dec/2020:16:56:03] ENGINE Listening for SIGTERM.
+[04/Dec/2020:16:56:03] ENGINE Bus STARTING
+[04/Dec/2020:16:56:03] ENGINE Set handler for console events.
+[04/Dec/2020:16:56:03] ENGINE Serving on http://0.0.0.0
+[04/Dec/2020:16:56:03] ENGINE Bus STARTED
+[04/Dec/2020:17:18:52] ENGINE Console event 0: shutting down bus
+[04/Dec/2020:17:18:52] ENGINE Removed handler for console events.
+[04/Dec/2020:17:18:52] ENGINE Bus STOPPING
+[04/Dec/2020:17:18:52] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[04/Dec/2020:17:18:52] ENGINE Handler for console events already off.
+[04/Dec/2020:17:18:52] ENGINE Bus STOPPED
+[04/Dec/2020:17:18:52] ENGINE Bus EXITING
+[04/Dec/2020:17:18:52] ENGINE Waiting for child threads to terminate...
+[04/Dec/2020:17:18:52] ENGINE Bus EXITED
+[09/Dec/2020:20:13:06] ENGINE Listening for SIGTERM.
+[09/Dec/2020:20:13:06] ENGINE Bus STARTING
+[09/Dec/2020:20:13:06] ENGINE Set handler for console events.
+[09/Dec/2020:20:13:06] ENGINE Serving on http://0.0.0.0
+[09/Dec/2020:20:13:06] ENGINE Bus STARTED
+[09/Dec/2020:20:13:45] ENGINE Console event 2: shutting down bus
+[09/Dec/2020:20:13:45] ENGINE Removed handler for console events.
+[09/Dec/2020:20:13:45] ENGINE Bus STOPPING
+[09/Dec/2020:20:13:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[09/Dec/2020:20:13:45] ENGINE Handler for console events already off.
+[09/Dec/2020:20:13:45] ENGINE Bus STOPPED
+[09/Dec/2020:20:13:45] ENGINE Bus EXITING
+[09/Dec/2020:20:13:45] ENGINE Waiting for child threads to terminate...
+[09/Dec/2020:20:13:45] ENGINE Bus EXITED
+[09/Dec/2020:20:13:59] ENGINE Listening for SIGTERM.
+[09/Dec/2020:20:13:59] ENGINE Bus STARTING
+[09/Dec/2020:20:13:59] ENGINE Set handler for console events.
+[09/Dec/2020:20:13:59] ENGINE Serving on http://0.0.0.0
+[09/Dec/2020:20:13:59] ENGINE Bus STARTED
+[09/Dec/2020:21:33:27] ENGINE Listening for SIGTERM.
+[09/Dec/2020:21:33:27] ENGINE Bus STARTING
+[09/Dec/2020:21:33:27] ENGINE Set handler for console events.
+[09/Dec/2020:21:33:27] ENGINE Serving on http://0.0.0.0
+[09/Dec/2020:21:33:27] ENGINE Bus STARTED
+[09/Dec/2020:21:39:26] ENGINE Console event 0: shutting down bus
+[09/Dec/2020:21:39:26] ENGINE Removed handler for console events.
+[09/Dec/2020:21:39:26] ENGINE Bus STOPPING
+[09/Dec/2020:21:39:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[09/Dec/2020:21:39:26] ENGINE Handler for console events already off.
+[09/Dec/2020:21:39:26] ENGINE Bus STOPPED
+[09/Dec/2020:21:39:26] ENGINE Bus EXITING
+[09/Dec/2020:21:39:26] ENGINE Waiting for child threads to terminate...
+[09/Dec/2020:21:39:26] ENGINE Bus EXITED
+[09/Dec/2020:21:46:01] ENGINE Listening for SIGTERM.
+[09/Dec/2020:21:46:01] ENGINE Bus STARTING
+[09/Dec/2020:21:46:01] ENGINE Set handler for console events.
+[09/Dec/2020:21:46:01] ENGINE Serving on http://0.0.0.0
+[09/Dec/2020:21:46:01] ENGINE Bus STARTED
+[09/Dec/2020:21:56:08] ENGINE Listening for SIGTERM.
+[09/Dec/2020:21:56:08] ENGINE Bus STARTING
+[09/Dec/2020:21:56:08] ENGINE Set handler for console events.
+[09/Dec/2020:21:56:08] ENGINE Console event 2: shutting down bus
+[09/Dec/2020:21:56:08] ENGINE Removed handler for console events.
+[09/Dec/2020:21:56:08] ENGINE Bus STOPPING
+[09/Dec/2020:21:56:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) already shut down
+[09/Dec/2020:21:56:08] ENGINE Handler for console events already off.
+[09/Dec/2020:21:56:08] ENGINE Bus STOPPED
+[09/Dec/2020:21:56:08] ENGINE Bus EXITING
+[09/Dec/2020:21:56:08] ENGINE Bus EXITED
+[09/Dec/2020:21:56:12] ENGINE Console event 0: shutting down bus
+[09/Dec/2020:21:56:12] ENGINE Removed handler for console events.
+[09/Dec/2020:21:56:12] ENGINE Bus STOPPING
+[09/Dec/2020:21:56:12] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[09/Dec/2020:21:56:12] ENGINE Handler for console events already off.
+[09/Dec/2020:21:56:12] ENGINE Bus STOPPED
+[09/Dec/2020:21:56:12] ENGINE Bus EXITING
+[09/Dec/2020:21:56:12] ENGINE Waiting for child threads to terminate...
+[09/Dec/2020:21:56:12] ENGINE Bus EXITED
+[09/Dec/2020:22:03:13] ENGINE Listening for SIGTERM.
+[09/Dec/2020:22:03:13] ENGINE Bus STARTING
+[09/Dec/2020:22:03:13] ENGINE Set handler for console events.
+[09/Dec/2020:22:03:13] ENGINE Serving on http://0.0.0.0
+[09/Dec/2020:22:03:13] ENGINE Bus STARTED
+[09/Dec/2020:22:14:50] ENGINE Console event 0: shutting down bus
+[09/Dec/2020:22:14:50] ENGINE Removed handler for console events.
+[09/Dec/2020:22:14:50] ENGINE Bus STOPPING
+[09/Dec/2020:22:14:50] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[09/Dec/2020:22:14:50] ENGINE Handler for console events already off.
+[09/Dec/2020:22:14:50] ENGINE Bus STOPPED
+[09/Dec/2020:22:14:50] ENGINE Bus EXITING
+[09/Dec/2020:22:14:50] ENGINE Waiting for child threads to terminate...
+[09/Dec/2020:22:14:50] ENGINE Bus EXITED
+[10/Dec/2020:11:47:09] ENGINE Listening for SIGTERM.
+[10/Dec/2020:11:47:09] ENGINE Bus STARTING
+[10/Dec/2020:11:47:09] ENGINE Set handler for console events.
+[10/Dec/2020:11:47:09] ENGINE Serving on http://0.0.0.0
+[10/Dec/2020:11:47:09] ENGINE Bus STARTED
+[10/Dec/2020:11:50:06] ENGINE Console event 0: shutting down bus
+[10/Dec/2020:11:50:06] ENGINE Removed handler for console events.
+[10/Dec/2020:11:50:06] ENGINE Bus STOPPING
+[10/Dec/2020:11:50:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[10/Dec/2020:11:50:06] ENGINE Handler for console events already off.
+[10/Dec/2020:11:50:06] ENGINE Bus STOPPED
+[10/Dec/2020:11:50:06] ENGINE Bus EXITING
+[10/Dec/2020:11:50:06] ENGINE Waiting for child threads to terminate...
+[10/Dec/2020:11:50:06] ENGINE Bus EXITED
+[10/Dec/2020:11:50:43] ENGINE Listening for SIGTERM.
+[10/Dec/2020:11:50:43] ENGINE Bus STARTING
+[10/Dec/2020:11:50:43] ENGINE Set handler for console events.
+[10/Dec/2020:11:50:44] ENGINE Serving on http://0.0.0.0
+[10/Dec/2020:11:50:44] ENGINE Bus STARTED
+[10/Dec/2020:12:18:23] ENGINE Console event 2: shutting down bus
+[10/Dec/2020:12:18:23] ENGINE Removed handler for console events.
+[10/Dec/2020:12:18:23] ENGINE Bus STOPPING
+[10/Dec/2020:12:18:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[10/Dec/2020:12:18:23] ENGINE Handler for console events already off.
+[10/Dec/2020:12:18:23] ENGINE Bus STOPPED
+[10/Dec/2020:12:18:23] ENGINE Bus EXITING
+[10/Dec/2020:12:18:23] ENGINE Bus EXITED

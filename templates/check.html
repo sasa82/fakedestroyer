@@ -36,12 +36,12 @@
 	#raw
 	$(document).ready(function() {
 		console.log("inside check script " )
-		//var url = 'http://127.0.0.1/api'; // use for local api
-		var url = 'http://fakedestroer.datacentr.net/api';
+		var url = 'http://127.0.0.1/api'; // use for local api
+		//var url = 'http://fakedestroer.datacentr.net/api';
 		
 		$('#check').click(function(){
 			var data = $('textarea').val();
-			$('textarea').val('');
+			console.log(data);
 			$.post(url, {
 				data: data
 			}, onResponse)
