@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [28/Nov/2020:23:39:12] ENGINE Listening for SIGUSR1.
 [28/Nov/2020:23:39:12] ENGINE Listening for SIGTERM.
 [28/Nov/2020:23:39:12] ENGINE Listening for SIGHUP.
@@ -389,3 +390,11 @@ mysql.connector.errors.NotSupportedError: Authentication plugin 'caching_sha2_pa
 [10/Dec/2020:12:18:23] ENGINE Bus STOPPED
 [10/Dec/2020:12:18:23] ENGINE Bus EXITING
 [10/Dec/2020:12:18:23] ENGINE Bus EXITED
+=======
+[06/Dec/2020:16:50:46] ENGINE Listening for SIGTERM.
+[06/Dec/2020:16:50:46] ENGINE Listening for SIGUSR1.
+[06/Dec/2020:16:50:46] ENGINE Listening for SIGHUP.
+[06/Dec/2020:16:50:46] ENGINE Bus STARTING
+[06/Dec/2020:16:50:46] ENGINE Serving on http://0.0.0.0
+[06/Dec/2020:16:50:46] ENGINE Bus STARTED
+>>>>>>> fbe11376005338eb0d7399a65ca4d3a1d4bd998f
