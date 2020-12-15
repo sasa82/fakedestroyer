@@ -1,5 +1,5 @@
+import hashlib 
 import random
-import string
 import string
 2801
 import cherrypy
@@ -59,7 +59,9 @@ def Form_hash(array):
         h4 = str(array[i + 3])
         h5 = str(array[i + 4])
         five_wo = h1 + h2 + h3 + h4 + h5
-        f_hash = hash(five_wo)
+        two_bites = str.encode(five_wo, encoding='utf-8')
+        sha_hash = hashlib.sha1(two_bites)
+        f_hash = sha_hash.hexdigest()
         i = i + 1
         list.append(f_hash)
     return list
@@ -94,13 +96,14 @@ def out(str1, str2):
     print(d1)
     for i in range(len(str1)):
         fk = str1[i][1]
-        print(fk)
-        slt = First(fk)
-        st = Normal_form(slt)
-        rt = normal_length(st)
-        rtr = Form_hash(rt)
-        print(rtr)
-        c = Compare(d1, rtr)
+        array = fk.split()
+        #print(fk)
+        #slt = First(fk)
+        #st = Normal_form(slt)
+        #rt = normal_length(st)
+        #rtr = Form_hash(rt)
+        #print(rtr)
+        c = Compare(d1, array)
         if c > 1:
             fs = str1[i][2]
             print(fs)
@@ -117,7 +120,7 @@ def fetch_items(data):
 	cursor = connection.cursor(buffered=True)
 	cursor.execute("SET NAMES 'utf8';")
 	cursor.execute("SET CHARACTER SET 'utf8';")
-	fetch_query = ("SELECT * FROM entries")
+	fetch_query = ("SELECT * FROM enntries")
 	cursor.execute(fetch_query)
 	result = cursor.fetchall()
 	cursor.close()
@@ -165,17 +168,6 @@ class FakeDestroyer(object):
 		html_template.css_scripts=['static/style/style.css']
 		return str(html_template)
 		
-	@cherrypy.expose
-	def check(self):
-		html_template = Template(file='templates/check.html')
-		html_template.css_scripts=['static/style/style.css']
-		return str(html_template)
-		
-	@cherrypy.expose
-	def about(self):
-		html_template = Template(file='templates/about.html')
-		html_template.css_scripts=['static/style/style.css']
-		return str(html_template)
 				
 	@cherrypy.expose
 	def api(self, data):
