@@ -43,6 +43,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
 }
 input,
 button,
@@ -438,11 +439,13 @@ h6 {
 /*MAIN*/
 
 
+/*
 #us {
   -webkit-transition: all 350ms ease-in-out;
   -o-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
 }
+*/
 
 /*БЛОК ВТОРОГО БЛОКА ПЛЮС АНИМАЦИЯ С ВОЛНОЙ*/
 .main__aboutus {
@@ -454,6 +457,13 @@ h6 {
   box-shadow: 0 0 10px #ccc;
   background-color: rgba(255, 184, 34, 0.07) !important;
   z-index: -2;
+    
+    
+/*
+    -webkit-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+*/
+  transition: all 350ms ease-in-out;
 }
 
 .main__aboutus:after {
@@ -517,7 +527,9 @@ h6 {
     justify-content: space-between;
 } 
 
-
+.main__us{
+    transition: all 350ms ease-in-out;
+}
 
 
 /*БЛОК ДЛЯ БЛОКА ВТОРОГО БЛОКА */
@@ -585,12 +597,14 @@ h6 {
 .main__us h3 {
   text-align: center;
   font-size: 20px;
+    font-weight: 600;
 }
 /*СТИЛИ ДЛЯ ТЕКСТА ВТОРОГО БЛОКА*/
 
 .main__us p {
+    margin-top: 20px;
   text-align: center;
-  font-size: 15px;
+  font-size: 19px;
 }
 
 

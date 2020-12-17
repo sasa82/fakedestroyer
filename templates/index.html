@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Fakedestroyers</title>
 <!--   <link rel="stylesheet" href="../static/css/style.min.css">-->
     <link rel="stylesheet" href="../static/css/style.min.css">
 </head>
@@ -92,10 +92,10 @@
 
       <main class="main">
 
-         <div id="us" class="main__aboutus">
+         <div  class="main__aboutus">
 
             <div class="container">
-               <div class="main__us">
+               <div id="us" class="main__us">
 
                   <picture><source srcset="../static/images/png.webp" type="image/webp"><img class="glob__logo" src="../static/images/png.png" alt="#"></picture>
                   <div class="glo__block">
@@ -196,7 +196,7 @@
                      <p>Проверить информацию на правдивость</p>
 
 
-                     <textarea id="textarea" name="textarea" placeholder='Введите текст БЕЗ КАВЫЧЕК "" '></textarea>
+                     <textarea id="textarea" name="textarea" placeholder='Введите текст БЕЗ КАВЫЧЕК "". Это займет некоторое время пока программа проверит Вашу информацию! '></textarea>
 
 
                      <p class=" text__input">
@@ -310,14 +310,7 @@
       particlesJS("particles-js", { "particles": { "number": { "value": 128, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
 
 
-    
-    
-    </script>
-
-   <script type="text/javascript">
-
-       
-            #raw
+	       #raw
 	$(document).ready(function() {
 		console.log("inside check script " )
 		//var url = 'http://127.0.0.1/api'; // use for local api
@@ -353,7 +346,7 @@
 			
 			var respStr = "",  refWithLink = "";
 			if(!response.reference){
-				respStr = "На даний момент в базе даних немає інформації, яка визначала б Ваш запит фейком. </br> Дякуємо, що скористались даним сайтом!"
+				respStr = "На даний момент в базі даних немає інформації, яка визначала б Ваш запит фейком. </br> Дякуємо, що скористались даним сайтом!"
 			}else{
 				refWithLink = response.reference
 				//refWithLink.link = response.reference
@@ -366,6 +359,7 @@
 		}
   })
   #end raw
+	
 
    </script>
 

@@ -97,12 +97,6 @@ def out(str1, str2):
     for i in range(len(str1)):
         fk = str1[i][1]
         array = fk.split()
-        #print(fk)
-        #slt = First(fk)
-        #st = Normal_form(slt)
-        #rt = normal_length(st)
-        #rtr = Form_hash(rt)
-        #print(rtr)
         c = Compare(d1, array)
         if c > 1:
             fs = str1[i][2]
